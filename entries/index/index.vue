@@ -66,4 +66,10 @@
 		font-weight: normal;
 		font-style: normal;
 	}
+	
+	.app_index {
+		& .app_index-dec {
+			color: green;
+		}
+	}
 </style>
