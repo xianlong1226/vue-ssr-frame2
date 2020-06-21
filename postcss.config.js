@@ -1,11 +1,9 @@
 module.exports = {
+  ident: 'postcss',
+  // parser: 'postcss-less',
   sourceMap: true,
   plugins: {
-    'autoprefixer': true,
-    'postcss-preset-env': {
-      features: {
-        'nesting-rules': true
-      }
-    }
+    'autoprefixer': {},
+    'postcss-preset-env': {}
   }
 }

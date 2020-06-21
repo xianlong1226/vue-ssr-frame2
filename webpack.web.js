@@ -43,7 +43,9 @@ let config = {
             // localIdentName: '[local]_[hash:base64:8]'
           }
         },
-        'postcss-loader'
+        {
+          loader: 'postcss-loader'
+        }
       ]
     }, {
       // 普通的 `.postcss` 文件和 `*.vue` 文件中的
@@ -63,7 +65,7 @@ let config = {
           }
         },
         {
-          loader: "postcss-loader" // compiles postcss to CSS
+          loader: 'postcss-loader'
         }
       ]
     }, {

@@ -44,6 +44,7 @@
 		"fs-extra": "^9.0.1",
 		"koa": "^2.12.1",
 		"koa-static2": "^0.1.8",
+		"postcss-less": "^3.1.4",
 		"style-loader": "^1.2.1",
 		"vue-style-loader": "^4.1.2"
 	}
