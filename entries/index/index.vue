@@ -57,18 +57,13 @@
 </script>
 
 <style lang="postcss">
+	@import './index.postcss';
+
 	@font-face {
 		font-family: 'transformericon-font';
 		src: url('../../fonts/transformericon.eot');
 		src: url('../../fonts/transformericon.eot?#iefix') format('embedded-opentype'), url('../../fonts/transformericon.ttf') format('truetype'), url('../../fonts/transformericon.woff') format('woff'), url('../../fonts/transformericon.svg#icons-font') format('svg');
 		font-weight: normal;
 		font-style: normal;
-	}
-
-	.app_index {
-		color: green;
-		height: 300px;
-		font-family: 'transformericon-font';
-    background: #eee url('./images/bg.jpg') no-repeat;
 	}
 </style>

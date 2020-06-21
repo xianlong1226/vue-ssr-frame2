@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const htmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const glob = require('glob')
@@ -18,7 +17,6 @@ let config = {
     publicPath: publicPath
   },
   module: {
-    noParse: /jquery/,
     rules: [{
       // 它会应用到普通的 `.js` 文件
       // 以及 `.vue` 文件中的 `<script>` 块
@@ -92,9 +90,6 @@ let config = {
     // 例如，如果你有一条匹配 /\.js$/ 的规则，那么它会应用到 .vue 文件里的 <script> 块。
     new VueLoaderPlugin(),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
     }),
     new webpack.DefinePlugin({
     }),

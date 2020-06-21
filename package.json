@@ -22,8 +22,6 @@
 		"css-loader": "^3.5.3",
 		"file-loader": "^6.0.0",
 		"glob": "^7.1.6",
-		"html-webpack-plugin": "^4.3.0",
-		"jquery": "^3.5.1",
 		"mini-css-extract-plugin": "^0.9.0",
 		"postcss-assets": "^5.0.0",
 		"postcss-loader": "^3.0.0",
@@ -38,11 +36,10 @@
 		"vue-server-renderer": "^2.6.11",
 		"vue-template-compiler": "^2.6.11",
 		"vuex": "^3.4.0",
-		"webpack": "^4.43.0",
-		"webpack-dev-server": "^3.11.0",
-		"webpack-merge": "^4.2.2"
+		"webpack": "^4.43.0"
 	},
 	"dependencies": {
+		"autoprefixer": "^9.8.2",
 		"core-js": "^3.6.5",
 		"fs-extra": "^9.0.1",
 		"koa": "^2.12.1",

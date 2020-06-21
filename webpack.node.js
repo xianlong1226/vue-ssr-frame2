@@ -17,7 +17,6 @@ let config = {
     libraryTarget: 'commonjs2'
   },
   module: {
-    noParse: /jquery/,
     rules: [{
       // 它会应用到普通的 `.js` 文件
       // 以及 `.vue` 文件中的 `<script>` 块
@@ -89,9 +88,6 @@ let config = {
     // 例如，如果你有一条匹配 /\.js$/ 的规则，那么它会应用到 .vue 文件里的 <script> 块。
     new VueLoaderPlugin(),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
     }),
     new webpack.DefinePlugin({
       'process.env.VUE_ENV': '"server"' // 配置 vue 的环境变量，告诉 vue 是服务端渲染，就不会做耗性能的 dom-diff 操作了
