@@ -7,8 +7,24 @@
   height: 300px;
   font-family: 'transformericon-font';
   background: var(--mainColor) url('./images/bg.jpg') no-repeat;
+  /* 会被 autoprefixer 处理 */
+  box-shadow: 10px 10px 5px #888888;
 
+  /* 会被 postcss-nesting 处理 */
   & > button {
     color: red;
   }
+}
+
+/* 会被 autoprefixer 处理 */
+::placeholder {
+  color: gray;
+}
+
+@font-face {
+  font-family: 'transformericon-font';
+  src: url('../../fonts/transformericon.eot');
+  src: url('../../fonts/transformericon.eot?#iefix') format('embedded-opentype'), url('../../fonts/transformericon.ttf') format('truetype'), url('../../fonts/transformericon.woff') format('woff'), url('../../fonts/transformericon.svg#icons-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }

@@ -57,16 +57,10 @@
 </script>
 
 <style lang="postcss">
+	/* 会被 postcss-import 处理*/
 	@import './index.postcss';
-
-	@font-face {
-		font-family: 'transformericon-font';
-		src: url('../../fonts/transformericon.eot');
-		src: url('../../fonts/transformericon.eot?#iefix') format('embedded-opentype'), url('../../fonts/transformericon.ttf') format('truetype'), url('../../fonts/transformericon.woff') format('woff'), url('../../fonts/transformericon.svg#icons-font') format('svg');
-		font-weight: normal;
-		font-style: normal;
-	}
 	
+	/* 会被 postcss-nesting 处理 */
 	.app_index {
 		& .app_index-dec {
 			color: green;
